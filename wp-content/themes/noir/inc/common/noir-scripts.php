@@ -4,20 +4,20 @@
  * eduker_scripts description
  * @return [type] [description]
  */
-function eduker_scripts() {
+function noir_scripts() {
 
     /**
      * all css files
     */
 
-    wp_enqueue_style( 'noir-fonts', eduker_fonts_url(), array(), time() );
+    wp_enqueue_style( 'noir-fonts', noir_fonts_url(), array(), time() );
     if( is_rtl() ){
         wp_enqueue_style( 'bootstrap-rtl', NOIR_THEME_CSS_DIR.'bootstrap.rtl.min.css', array() );
     }else{
         wp_enqueue_style( 'bootstrap', NOIR_THEME_CSS_DIR.'bootstrap.css', array() );
     }
 
-    wp_enqueue_style( 'bootstrap-min', NOIR_THEME_CSS_DIR . 'bootstrap.min..css', [] );
+    wp_enqueue_style( 'bootstrap-min', NOIR_THEME_CSS_DIR . 'bootstrap.min.css', [] );
     wp_enqueue_style( 'font-awesome-pro-noir', NOIR_THEME_CSS_DIR . 'font-awesome-pro.css', [] );
     wp_enqueue_style( 'remixicon', NOIR_THEME_CSS_DIR . 'remixicon.css', [] );
     wp_enqueue_style( 'magnific-popup', NOIR_THEME_CSS_DIR . 'magnific-popup.css', [] );
